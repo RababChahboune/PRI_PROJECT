@@ -20,8 +20,8 @@ class DatabaseSeeder extends Seeder
         factory(\App\question::class, 40)->create();
         factory(\App\repense::class, 80)->create();
 
-        $coursIds= DB::table('cours')->pluck('code');
-        $utilisateurs= DB::table('utilisateurs')->pluck('nomUtilisateur');
+        $coursIds= DB::table('cours')->pluck('id');
+        $utilisateurs= DB::table('utilisateurs')->pluck('id');
         $pivots = [];
         foreach($coursIds as $coursId)
         {
@@ -40,7 +40,7 @@ class DatabaseSeeder extends Seeder
 
 
         $carteIds= DB::table('cartes')->pluck('id');
-        $utilisateurs= DB::table('utilisateurs')->pluck('nomUtilisateur');
+        $utilisateurs= DB::table('utilisateurs')->pluck('id');
         $pivots = [];
         foreach($carteIds as $carteId)
         {
@@ -59,7 +59,7 @@ class DatabaseSeeder extends Seeder
         DB::table('carte_utilisateur')->insert($pivots);
 
         $quizIds= DB::table('quizzes')->pluck('id');
-        $utilisateurs= DB::table('utilisateurs')->pluck('nomUtilisateur');
+        $utilisateurs= DB::table('utilisateurs')->pluck('id');
         $pivots = [];
         foreach($quizIds as $quizId)
         {

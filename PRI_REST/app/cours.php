@@ -19,6 +19,6 @@ class cours extends Model
         return $this->hasMany('App\quiz',"cours_id");
     }
     public function relatedCards(){
-        return $this->hasMany('App\carte',"carte_id");
+        return $this->hasMany('App\carte',"cours_id");
     }
 }

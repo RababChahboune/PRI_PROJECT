@@ -24,7 +24,7 @@ $factory->define(App\User::class, function (Faker $faker) {
 
 $factory->define(App\utilisateur::class, function (Faker $faker) {
     return [
-        'nomUtilisateur' => $faker->unique()->userName,
+        'id' => $faker->unique()->userName,
         'nom' => $faker->lastName,
         'prenom' => $faker->firstName,
         'motDePasse' => $faker->password(8),
@@ -40,12 +40,12 @@ $factory->define(App\domaine::class, function (Faker $faker) {
 });
 $factory->define(App\cours::class, function (Faker $faker) {
     return [
-        'code' => $faker->unique()->word,
+        'id' => $faker->unique()->word,
         'titre' => $faker->word,
         'duree' => $faker->randomNumber(),
         'difficulte' => $faker->randomNumber(),
         'examination' => $faker->boolean,
-        'utilisateur_id' =>  DB::table('utilisateurs')->pluck('nomUtilisateur')->first(),
+        'utilisateur_id' =>  DB::table('utilisateurs')->pluck('id')->first(),
         'domaine_id' => random_int(\DB::table('domaines')->min('id'), \DB::table('domaines')->max('id')),
     ];
 });
@@ -53,13 +53,13 @@ $factory->define(App\carte::class, function (Faker $faker) {
     return [
         'titre' => $faker->word,
         'contenu' => $faker->text,
-        'cours_id' =>DB::table('cours')->pluck('code')->first()
+        'cours_id' =>DB::table('cours')->pluck('id')->first()
     ];
 });
 $factory->define(App\quiz::class, function (Faker $faker) {
     return [
         'description' => $faker->text,
-        'cours_id' =>DB::table('cours')->pluck('code')->first()
+        'cours_id' =>DB::table('cours')->pluck('id')->first()
     ];
 });
 
