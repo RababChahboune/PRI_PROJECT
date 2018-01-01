@@ -20,6 +20,7 @@ class CreateUtilisateursTable extends Migration
             $table->string('nom');
             $table->string('prenom');
             $table->string('email');
+            $table->boolean('type');
             $table->timestamps();
         });
     }
