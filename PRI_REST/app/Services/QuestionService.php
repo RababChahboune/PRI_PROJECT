@@ -71,6 +71,4 @@ class QuestionService extends ServiceBP
         $question = question::where('id', $id)->firstOrFail();
         return $question->delete();
     }
-
-
 }

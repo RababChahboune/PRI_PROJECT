@@ -21,3 +21,4 @@ Route::resource('Cartes', CarteController::class);
 Route::resource('Cours', CoursController::class);
 Route::resource('Domaines', DomaineController::class);
 Route::resource('Questions', QuestionController::class);
+Route::resource('Quizzes', QuizController::class);
