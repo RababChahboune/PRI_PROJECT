@@ -18,4 +18,5 @@ class utilisateur extends Model
     public function passQuiz(){
         return $this->belongsToMany('App\quiz',"quiz_utilisateur","utilisateur_id","quiz_id");
     }
+    protected $casts = ['id' => 'string'];
 }
