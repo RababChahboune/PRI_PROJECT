@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="775b2556-4ed3-4adb-b490-01f400ec8045" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PRI_REST/app/Services/DomaineService.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PRI_REST/app/Services/QuestionService.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/app/domaine.php" afterPath="$PROJECT_DIR$/PRI_REST/app/domaine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/app/question.php" afterPath="$PROJECT_DIR$/PRI_REST/app/question.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/routes/api.php" afterPath="$PROJECT_DIR$/PRI_REST/routes/api.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,33 +17,33 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DomaineService.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PRI_REST/app/Services/DomaineService.php">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PRI_REST/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+            <state relative-caret-position="374">
+              <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="domaine.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PRI_REST/app/domaine.php">
+      <file leaf-file-name="QuestionService.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PRI_REST/app/Services/QuestionService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="243">
+              <caret line="52" column="49" lean-forward="false" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoursController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PRI_REST/app/Http/Controllers/CoursController.php">
+      <file leaf-file-name="QuestionController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PRI_REST/app/Http/Controllers/QuestionController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="123" column="9" lean-forward="true" selection-start-line="113" selection-start-column="8" selection-end-line="123" selection-end-column="9" />
+            <state relative-caret-position="311">
+              <caret line="97" column="8" lean-forward="true" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
               <folding>
-                <element signature="e#40#70#0#PHP" expanded="true" />
+                <element signature="e#40#73#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,21 +52,11 @@
       <file leaf-file-name="DomaineController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PRI_REST/app/Http/Controllers/DomaineController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1938">
-              <caret line="114" column="51" lean-forward="false" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
+            <state relative-caret-position="366">
+              <caret line="118" column="21" lean-forward="false" selection-start-line="113" selection-start-column="8" selection-end-line="123" selection-end-column="9" />
               <folding>
                 <element signature="e#40#72#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PRI_REST/routes/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -88,12 +78,16 @@
       <find>c</find>
       <find>co</find>
       <find>code</find>
-      <find>Carte</find>
       <find>Cours</find>
+      <find>Carte</find>
+      <find>titre</find>
+      <find>Domianes</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>Cours</replace>
+      <replace>contenu</replace>
+      <replace>questions</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -112,7 +106,6 @@
         <option value="$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_30_220641_cours_utilisateur.php" />
         <option value="$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_30_220730_carte_utilisateur.php" />
         <option value="$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_30_220759_quiz_utilisateur.php" />
-        <option value="$PROJECT_DIR$/PRI_REST/app/question.php" />
         <option value="$PROJECT_DIR$/PRI_REST/app/quiz.php" />
         <option value="$PROJECT_DIR$/PRI_REST/app/repense.php" />
         <option value="$PROJECT_DIR$/PRI_REST/app/Providers/CarteServiceProvider.php" />
@@ -135,7 +128,11 @@
         <option value="$PROJECT_DIR$/PRI_REST/app/domaine.php" />
         <option value="$PROJECT_DIR$/PRI_REST/app/Providers/DomaineServiceProvider.php" />
         <option value="$PROJECT_DIR$/PRI_REST/app/Http/Controllers/DomaineController.php" />
+        <option value="$PROJECT_DIR$/PRI_REST/app/question.php" />
+        <option value="$PROJECT_DIR$/PRI_REST/app/Providers/QuestionServiceProvider.php" />
+        <option value="$PROJECT_DIR$/PRI_REST/app/Http/Controllers/QuestionController.php" />
         <option value="$PROJECT_DIR$/PRI_REST/routes/api.php" />
+        <option value="$PROJECT_DIR$/PRI_REST/app/Services/QuestionService.php" />
       </list>
     </option>
   </component>
@@ -510,12 +507,12 @@
       <option name="presentableId" value="Default" />
       <updated>1514670010957</updated>
       <workItem from="1514670016446" duration="1953000" />
-      <workItem from="1514681561483" duration="44893000" />
+      <workItem from="1514681561483" duration="47035000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46846000" />
+    <option name="totallyTimeSpent" value="48988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -679,14 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PRI_REST/app/question.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="10" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_30_214839_create_utilisateurs_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -811,14 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Providers/CoursServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="28" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PRI_REST/app/Providers/DomaineServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -839,28 +820,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Services/DomaineService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="66" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/app/question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Providers/EventServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Providers/CoursServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="28" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Providers/QuestionServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="e#33#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PRI_REST/app/Http/Controllers/DomaineController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="114" column="51" lean-forward="false" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
+        <state relative-caret-position="366">
+          <caret line="118" column="21" lean-forward="false" selection-start-line="113" selection-start-column="8" selection-end-line="123" selection-end-column="9" />
           <folding>
             <element signature="e#40#72#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Services/DomaineService.php">
+    <entry file="file://$PROJECT_DIR$/PRI_REST/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        <state relative-caret-position="374">
+          <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PRI_REST/routes/api.php">
+    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Http/Controllers/QuestionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="311">
+          <caret line="97" column="8" lean-forward="true" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
+          <folding>
+            <element signature="e#40#73#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Services/QuestionService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="52" column="49" lean-forward="false" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
           <folding />
         </state>
       </provider>

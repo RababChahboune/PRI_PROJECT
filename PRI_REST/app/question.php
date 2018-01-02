@@ -12,4 +12,5 @@ class question extends Model
     public function relatedQuiz(){
         return $this->belongsTo('App\quiz',"quiz_id");
     }
+    protected $fillable = ['contenu'];
 }
