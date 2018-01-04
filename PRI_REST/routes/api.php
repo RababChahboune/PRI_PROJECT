@@ -23,3 +23,4 @@ Route::resource('Domaines', DomaineController::class);
 Route::resource('Questions', QuestionController::class);
 Route::resource('Quizzes', QuizController::class);
 Route::resource('Repenses', RepenseController::class);
+Route::resource('Utilisateurs', UtilisateurController::class);

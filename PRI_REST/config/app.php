@@ -178,6 +178,11 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\CarteServiceProvider::class,
         App\Providers\CoursServiceProvider::class,
+        App\Providers\DomaineServiceProvider::class,
+        App\Providers\QuestionServiceProvider::class,
+        App\Providers\QuizServiceProvider::class,
+        App\Providers\RepenseServiceProvider::class,
+        App\Providers\UtilisateurServiceProvider::class,
 
     ],
 

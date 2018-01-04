@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="775b2556-4ed3-4adb-b490-01f400ec8045" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PRI_REST/app/Services/RepenseService.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PRI_REST/app/Services/UtilisateurService.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/app/repense.php" afterPath="$PROJECT_DIR$/PRI_REST/app/repense.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/app/utilisateur.php" afterPath="$PROJECT_DIR$/PRI_REST/app/utilisateur.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/config/app.php" afterPath="$PROJECT_DIR$/PRI_REST/config/app.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/routes/api.php" afterPath="$PROJECT_DIR$/PRI_REST/routes/api.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,29 +21,41 @@
       <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PRI_REST/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            <state relative-caret-position="425">
+              <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repense.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PRI_REST/app/repense.php">
+      <file leaf-file-name="utilisateur.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PRI_REST/app/utilisateur.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="111" lean-forward="false" selection-start-line="18" selection-start-column="111" selection-end-line="18" selection-end-column="111" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtilisateurService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PRI_REST/app/Services/UtilisateurService.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+              <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RepenseService.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PRI_REST/app/Services/RepenseService.php">
+      <file leaf-file-name="UtilisateurController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PRI_REST/app/Http/Controllers/UtilisateurController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="49" column="48" lean-forward="false" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
-              <folding />
+            <state relative-caret-position="804">
+              <caret line="48" column="19" lean-forward="false" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+              <folding>
+                <element signature="e#40#76#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,8 +63,8 @@
       <file leaf-file-name="RepenseController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PRI_REST/app/Http/Controllers/RepenseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="362">
+              <caret line="119" column="19" lean-forward="true" selection-start-line="113" selection-start-column="8" selection-end-line="123" selection-end-column="9" />
               <folding>
                 <element signature="e#40#72#0#PHP" expanded="true" />
               </folding>
@@ -83,6 +96,8 @@
       <find>Question</find>
       <find>Carte</find>
       <find>quiz</find>
+      <find>Repense</find>
+      <find>repense</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -91,6 +106,7 @@
       <replace>Quizz</replace>
       <replace>Cours</replace>
       <replace>repense</replace>
+      <replace>utilisateur</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -120,9 +136,7 @@
         <option value="$PROJECT_DIR$/PRI_REST/app/Services/CarteService.php" />
         <option value="$PROJECT_DIR$/PRI_REST/app/carte.php" />
         <option value="$PROJECT_DIR$/PRI_REST/app/Providers/CoursServiceProvider.php" />
-        <option value="$PROJECT_DIR$/PRI_REST/config/app.php" />
         <option value="$PROJECT_DIR$/PRI_REST/app/Http/Controllers/CoursController.php" />
-        <option value="$PROJECT_DIR$/PRI_REST/app/utilisateur.php" />
         <option value="$PROJECT_DIR$/PRI_REST/app/cours.php" />
         <option value="$PROJECT_DIR$/PRI_REST/app/Services/CoursService.php" />
         <option value="$PROJECT_DIR$/PRI_REST/app/Services/DomaineService.php" />
@@ -139,9 +153,14 @@
         <option value="$PROJECT_DIR$/PRI_REST/app/Services/QuizService.php" />
         <option value="$PROJECT_DIR$/PRI_REST/app/Providers/RepenseServiceProvider.php" />
         <option value="$PROJECT_DIR$/PRI_REST/app/Http/Controllers/RepenseController.php" />
-        <option value="$PROJECT_DIR$/PRI_REST/routes/api.php" />
         <option value="$PROJECT_DIR$/PRI_REST/app/repense.php" />
         <option value="$PROJECT_DIR$/PRI_REST/app/Services/RepenseService.php" />
+        <option value="$PROJECT_DIR$/PRI_REST/routes/api.php" />
+        <option value="$PROJECT_DIR$/PRI_REST/app/Services/UtilisateurService.php" />
+        <option value="$PROJECT_DIR$/PRI_REST/app/Providers/UtilisateurServiceProvider.php" />
+        <option value="$PROJECT_DIR$/PRI_REST/config/app.php" />
+        <option value="$PROJECT_DIR$/PRI_REST/app/utilisateur.php" />
+        <option value="$PROJECT_DIR$/PRI_REST/app/Http/Controllers/UtilisateurController.php" />
       </list>
     </option>
   </component>
@@ -516,12 +535,12 @@
       <option name="presentableId" value="Default" />
       <updated>1514670010957</updated>
       <workItem from="1514670016446" duration="1953000" />
-      <workItem from="1514681561483" duration="54433000" />
+      <workItem from="1514681561483" duration="58072000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56386000" />
+    <option name="totallyTimeSpent" value="60025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -557,14 +576,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PRI_REST/app/utilisateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PRI_REST/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -645,14 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_30_220759_quiz_utilisateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_31_022735_create_domaines_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -665,14 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="26" column="37" lean-forward="false" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_30_214839_create_utilisateurs_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -717,14 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PRI_REST/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="179" column="50" lean-forward="false" selection-start-line="179" selection-start-column="50" selection-end-line="179" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PRI_REST/app/Providers/CarteServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -753,26 +740,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PRI_REST/app/utilisateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PRI_REST/app/carte.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Services/CoursService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="91" column="5" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="91" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -907,24 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Providers/RepenseServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-          <folding>
-            <element signature="e#33#65#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PRI_REST/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PRI_REST/app/Http/Controllers/QuizController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -943,21 +896,115 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Services/RepenseService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="69" column="5" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="69" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_30_220759_quiz_utilisateur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Services/CoursService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="65" column="9" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="65" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_30_214839_create_utilisateurs_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Providers/RouteServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Providers/RepenseServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="28" column="11" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="28" selection-end-column="11" />
+          <folding>
+            <element signature="e#33#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Providers/UtilisateurServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding>
+            <element signature="e#33#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="177" column="49" lean-forward="false" selection-start-line="177" selection-start-column="49" selection-end-line="177" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PRI_REST/app/Http/Controllers/RepenseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="362">
+          <caret line="119" column="19" lean-forward="true" selection-start-line="113" selection-start-column="8" selection-end-line="123" selection-end-column="9" />
           <folding>
             <element signature="e#40#72#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Services/RepenseService.php">
+    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Services/UtilisateurService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="49" column="48" lean-forward="false" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+        <state relative-caret-position="187">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/app/utilisateur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="111" lean-forward="false" selection-start-line="18" selection-start-column="111" selection-end-line="18" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRI_REST/app/Http/Controllers/UtilisateurController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="804">
+          <caret line="48" column="19" lean-forward="false" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+          <folding>
+            <element signature="e#40#76#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
