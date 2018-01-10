@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="775b2556-4ed3-4adb-b490-01f400ec8045" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/PRI_REST/app/Http/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/app/Services/CarteService.php" afterPath="$PROJECT_DIR$/PRI_REST/app/Services/CarteService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/app/Services/CoursService.php" afterPath="$PROJECT_DIR$/PRI_REST/app/Services/CoursService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/app/Services/QuizService.php" afterPath="$PROJECT_DIR$/PRI_REST/app/Services/QuizService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/app/Services/UtilisateurService.php" afterPath="$PROJECT_DIR$/PRI_REST/app/Services/UtilisateurService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/app/carte.php" afterPath="$PROJECT_DIR$/PRI_REST/app/carte.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/app/domaine.php" afterPath="$PROJECT_DIR$/PRI_REST/app/domaine.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/app/utilisateur.php" afterPath="$PROJECT_DIR$/PRI_REST/app/utilisateur.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/composer.json" afterPath="$PROJECT_DIR$/PRI_REST/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/composer.lock" afterPath="$PROJECT_DIR$/PRI_REST/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/config/app.php" afterPath="$PROJECT_DIR$/PRI_REST/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_30_215008_create_cartes_table.php" afterPath="$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_30_215008_create_cartes_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_30_215025_create_quizzes_table.php" afterPath="$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_30_215025_create_quizzes_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_30_215115_create_questions_table.php" afterPath="$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_30_215115_create_questions_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_30_215153_create_repenses_table.php" afterPath="$PROJECT_DIR$/PRI_REST/database/migrations/2017_12_30_215153_create_repenses_table.php" />
-    </list>
+    <list default="true" id="775b2556-4ed3-4adb-b490-01f400ec8045" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -411,12 +394,12 @@
       <workItem from="1514670016446" duration="1953000" />
       <workItem from="1514681561483" duration="58783000" />
       <workItem from="1515129732456" duration="2517000" />
-      <workItem from="1515429527513" duration="9991000" />
+      <workItem from="1515429527513" duration="10573000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73244000" />
+    <option name="totallyTimeSpent" value="73826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
