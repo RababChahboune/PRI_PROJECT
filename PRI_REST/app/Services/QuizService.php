@@ -14,8 +14,8 @@ use App\quiz;
 class QuizService extends ServiceBP
 {
     protected $supportedFields = [
-        'passedBy' => 'Appranti',
-        'relatedQuestion' => 'Quizzes',
+        'passedBy' => 'Apprentis',
+        'relatedQuestion' => 'Questions',
         'relatedCours' => 'Cours',
     ];
     protected $clauseProprieties = [

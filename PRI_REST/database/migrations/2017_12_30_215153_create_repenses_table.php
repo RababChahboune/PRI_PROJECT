@@ -15,7 +15,7 @@ class CreateRepensesTable extends Migration
     {
         Schema::create('repenses', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('contenu');
+            $table->text('contenu');
             $table->boolean('correct');
             $table->unsignedInteger('question_id');
             $table->timestamps();

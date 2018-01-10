@@ -183,6 +183,8 @@ return [
         App\Providers\QuizServiceProvider::class,
         App\Providers\RepenseServiceProvider::class,
         App\Providers\UtilisateurServiceProvider::class,
+        Barryvdh\Cors\ServiceProvider::class,
+
 
     ],
 

@@ -16,7 +16,7 @@ class CreateCartesTable extends Migration
         Schema::create('cartes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('titre');
-            $table->string('contenu');
+            $table->text('contenu');
             $table->string('cours_id');
             $table->timestamps();
         });

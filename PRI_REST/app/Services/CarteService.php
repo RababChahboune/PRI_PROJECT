@@ -11,7 +11,7 @@ use App\carte;
 
 class CarteService extends serviceBP {
     protected $supportedFields = [
-        'ratedBy' => 'Utilisateur',
+        'ratedBy' => 'Utilisateurs',
         'hasCours' => 'Cours',
     ];
     protected $clauseProprieties = [
@@ -20,7 +20,7 @@ class CarteService extends serviceBP {
         'titre' => 'titre',
         'cours_id' => 'cours_id'
     ];
-    protected $tableFields = ['contenu','titre','cours_id'];
+    protected $tableFields = ['contenu','titre'];
     public function getCartes($params){
         $withKeys = [];
         if(empty($params)){

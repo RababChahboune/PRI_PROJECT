@@ -14,7 +14,7 @@ use App\utilisateur;
 class UtilisateurService extends ServiceBP
 {
     protected $supportedFields = [
-        'createCours' => 'Creer',
+        'createdCours' => 'Creer',
         'seeCours' => 'Disponible',
         'ratedCard' => 'Evaluer',
         'passedQuiz' => 'Passer',
@@ -42,8 +42,17 @@ class UtilisateurService extends ServiceBP
         $data = [];
         foreach ($Utilisateurs as $utilisateur){
             $entry = $utilisateur;
-            if(in_array('relatedQuestion',$withKeys)){
-                $question = $utilisateur->relatedQuestion;
+            if(in_array('createdCours',$withKeys)){
+                $cCours = $utilisateur->createdCours;
+            }
+            if(in_array('seeCours',$withKeys)){
+                $sCours = $utilisateur->seeCours;
+            }
+            if(in_array('ratedCard',$withKeys)){
+                $cards = $utilisateur->ratedCard;
+            }
+            if(in_array('passedQuiz',$withKeys)){
+                $quizzes = $utilisateur->passedQuiz;
             }
             $data[] = $entry;
         }

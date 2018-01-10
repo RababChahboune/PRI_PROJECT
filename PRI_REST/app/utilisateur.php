@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class utilisateur extends Model
 {
-    public function createCours(){
+    public function createdCours(){
         return $this->hasMany('App\cours','utilisateur_id');
     }
     public function seeCours(){

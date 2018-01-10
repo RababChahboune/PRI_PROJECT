@@ -14,10 +14,10 @@ use App\cours;
 class CoursService extends ServiceBP
 {
     protected $supportedFields = [
-        'isSeenBy' => 'Appranti',
+        'isSeenBy' => 'Apprentis',
         'createdBy' => 'Enseignant',
         'categorizedBy' => 'Domaine',
-        'relatedQuizzes' => 'Quizzez',
+        'relatedQuizzes' => 'Quizzes',
         'relatedCards' => 'Cartes',
     ];
     protected $clauseProprieties = [

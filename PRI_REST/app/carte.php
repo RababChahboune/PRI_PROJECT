@@ -13,5 +13,5 @@ class carte extends Model
         return $this->belongsToMany('App\utilisateur',"carte_utilisateur","carte_id","utilisateur_id")->withPivot('appreciation');
     }
 
-    protected $fillable = ['titre','contenu','cours_id'];
+    protected $fillable = ['titre','contenu'];
 }
