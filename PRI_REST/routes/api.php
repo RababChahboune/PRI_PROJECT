@@ -18,6 +18,7 @@ use Illuminate\Http\Request;
 });*/
 
 Route::post('Validate','QuizController@validateQuiz');
+Route::post('Login','UtilisateurController@login');
 Route::get('AlreadyPassed/{id}','QuizController@alreadyPassed');
 
 Route::resource('Cartes', CarteController::class);

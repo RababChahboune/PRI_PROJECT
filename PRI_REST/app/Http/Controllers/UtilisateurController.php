@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Services\UtilisateurService;
+use App\utilisateur;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
@@ -124,6 +125,15 @@ class UtilisateurController extends Controller
         }
         catch (Exception $e){
             return response()->json(["message" => $e->getMessage()],500);
+        }
+    }
+    public function login(Request $request){
+        $credentials = $request->only('id','motDePasse');
+        $user = utilisateur::where($credentials)->first();
+        if($user != null){
+            return response()->json(['found' => 1],200);
+        }else{
+            return response()->json(['found'=>0], 401);
         }
     }
 }
