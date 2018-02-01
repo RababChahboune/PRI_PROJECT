@@ -10,6 +10,7 @@ namespace App\Services;
 
 
 use App\quiz;
+use App\repense;
 
 class QuizService extends ServiceBP
 {
@@ -23,6 +24,8 @@ class QuizService extends ServiceBP
         'cours_id' => 'cours_id',
     ];
     protected $tableFields = ['description'];
+
+    protected $questionService,$reponseService;
 
     public function getQuiz($params){
         $withKeys = [];
@@ -40,6 +43,10 @@ class QuizService extends ServiceBP
             $entry = $quiz;
             if(in_array('relatedQuestion',$withKeys)){
                 $questions = $quiz->relatedQuestion;
+                foreach ($questions as $question){
+
+                    $repenses = $question->relatedRepense;
+                }
             }
             if(in_array('passedBy',$withKeys)){
                 $appranti = $quiz->passedBy;
@@ -52,10 +59,22 @@ class QuizService extends ServiceBP
         return $data;
     }
     public function createQuiz($req){
+        $questionService = new QuestionService();
+        $reponseService = new RepenseService();
         $quiz = new quiz();
         $quiz->description = $req->input('description');
         $quiz->cours_id = $req->input('cours_id');
         $quiz->save();
+        $questions = $req->input('related_question');
+        foreach($questions as $question){
+            $id = $questionService->createQuestionWithoutReq($question,$quiz->id);
+            $repenses = $question['related_repense'];
+            foreach ($repenses as $repense){
+                $repense = $reponseService->createRepenseWithOutReq($repense,$id);
+            }
+            //$question->related_repense = $repense;
+        }
+        //$quiz->related_question = $questions;
         return $quiz;
     }
     public function updateQuiz($req,$id){
@@ -75,4 +94,33 @@ class QuizService extends ServiceBP
         $quiz = quiz::where('id', $id)->firstOrFail();
         return $quiz->delete();
     }
+    public function cleanAnswers($answers){
+        $cleaned = [];
+        foreach ($answers as $answer){
+            if(!array_key_exists ($answer['question'],$cleaned)){
+                $cleaned[$answer['question']] = [$answer['id']];
+            }else{
+                array_push($cleaned[$answer['question']],$answer['id']);
+            }
+        }
+        return $cleaned;
+    }
+    public function checkAnswers($answers){
+        $questionCount = 0;
+        foreach ($answers as $key => $value){
+            $answerCount = 0;
+            foreach ($value as $id){
+                $answer = repense::find($id);
+                if($answer['correct'] == true){
+                    $answerCount++;
+                }
+            }
+            if($answerCount == count($value)){
+                $questionCount++;
+            }
+        }
+
+        return $questionCount;
+    }
+
 }

@@ -13,6 +13,16 @@ use App\question;
 
 class QuestionService extends ServiceBP
 {
+    /**
+     * QuestionService constructor.
+     * @param array $supportedFields
+     */
+    public function __construct()
+    {
+
+    }
+
+
     protected $supportedFields = [
         'relatedRepense' => 'Repenses',
         'relatedQuiz' => 'Quiz',
@@ -22,7 +32,8 @@ class QuestionService extends ServiceBP
         'contenu' => 'contenu',
     ];
     protected $tableFields = ['contenu'];
-    
+
+
     public function getQuestion($params){
         $withKeys = [];
         if(empty($params)){
@@ -53,6 +64,13 @@ class QuestionService extends ServiceBP
         $question->quiz_id = $req->input('quiz_id');
         $question->save();
         return $question;
+    }
+    public function createQuestionWithoutReq($qst,$id){
+        $question = new question();
+        $question->contenu = $qst['contenu'];
+        $question->quiz_id = $id;
+        $question->save();
+        return $question->id;
     }
     public function updateQuestion($req,$id){
         $question = question::where('id',$id)->firstOrFail();

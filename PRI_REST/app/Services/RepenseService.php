@@ -13,6 +13,15 @@ use App\repense;
 
 class RepenseService extends ServiceBP
 {
+
+    /**
+     * QuestionService constructor.
+     * @param array $supportedFields
+     */
+    public function __construct()
+    {
+
+    }
     protected $supportedFields = [
         'relatedQuestion' => 'Question',
     ];
@@ -48,6 +57,14 @@ class RepenseService extends ServiceBP
         $repense->contenu = $req->input('contenu');
         $repense->question_id = $req->input('question_id');
         $repense->correct = $req->input('correct');
+        $repense->save();
+        return $repense;
+    }
+    public function createRepenseWithOutReq($res,$id){
+        $repense = new repense();
+        $repense->contenu = $res['contenu'];
+        $repense->question_id = $id;
+        $repense->correct = $res['correct'];
         $repense->save();
         return $repense;
     }

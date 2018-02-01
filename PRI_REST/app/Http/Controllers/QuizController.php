@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use Mockery\Exception;
+use Symfony\Component\Console\Question\Question;
 
 class QuizController extends Controller
 {
@@ -46,8 +47,8 @@ class QuizController extends Controller
     public function store(Request $request)
     {
         try{
-            $data = $this->quizzes->createQuiz($request);
-            return response()->json($data,201);
+            $data = $this->quizzes->createQuiz($request,$this->quizzes);
+            return response()->json($data,200);
         }catch (QueryException $e){
             return response()->json(["message" => $e->getMessage()],500);
         }
@@ -122,5 +123,15 @@ class QuizController extends Controller
         catch (Exception $e){
             return response()->json(["message" => $e->getMessage()],500);
         }
+    }
+    public function validateQuiz(Request $request){
+        $answers = $request->input("answers");
+        $cleaned = $this->quizzes->cleanAnswers($answers);
+        $validated = $this->quizzes->checkAnswers($cleaned);
+        return response()->json($validated,200);
+    }
+
+    public function alreadyPassed($id){
+        echo $id;
     }
 }
