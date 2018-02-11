@@ -11,6 +11,8 @@ namespace App\Services;
 
 use App\quiz;
 use App\repense;
+use App\utilisateur;
+use Illuminate\Support\Facades\DB;
 
 class QuizService extends ServiceBP
 {
@@ -119,8 +121,27 @@ class QuizService extends ServiceBP
                 $questionCount++;
             }
         }
-
         return $questionCount;
+    }
+
+    public function saveMark($quiz_id,$user_id,$validated){
+        $user = utilisateur::find($user_id);
+        $quiz = quiz::find($quiz_id);
+        $nbQst = count($quiz->relatedQuestion);
+        $mark = ($validated*100)/$nbQst;
+        $user->passedQuiz()->attach($quiz_id, ['score' => $mark]);
+        return $mark;
+    }
+
+    public function alreadyPassed($quizId,$userId){
+        $relation = DB::table('quiz_utilisateur')
+            ->where('utilisateur_id', '=', $userId)
+            ->where('quiz_id','=',$quizId)
+            ->get();
+        if($relation->count() == 0){
+            return null;
+        }
+        return $relation;
     }
 
 }

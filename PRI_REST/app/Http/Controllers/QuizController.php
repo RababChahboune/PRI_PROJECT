@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\quiz;
 use App\Services\QuizService;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Database\QueryException;
@@ -126,12 +127,27 @@ class QuizController extends Controller
     }
     public function validateQuiz(Request $request){
         $answers = $request->input("answers");
+        $quiz_id = $request->input("quiz_id");
+        $utilisateur_id = $request->input("utilisateur_id");
         $cleaned = $this->quizzes->cleanAnswers($answers);
         $validated = $this->quizzes->checkAnswers($cleaned);
-        return response()->json($validated,200);
+        $mark = $this->quizzes->saveMark($quiz_id,$utilisateur_id,$validated);
+        return response()->json([$validated,$mark],200);
     }
 
-    public function alreadyPassed($id){
-        echo $id;
+    public function alreadyPassed(Request $request){
+        $quiz = $request->input("quiz_id");
+        $user = $request->input("utilisateur_id");
+        $passed = $this->quizzes->alreadyPassed($quiz,$user);
+        if($passed == null){
+            return response()->json(null,404);
+        }
+        return response()->json($passed,200);
+    }
+
+    public function ranking($id){
+        $quiz = quiz::find($id);
+        $ranking = $quiz->passedBy()->orderBy('quiz_utilisateur.score', 'desc')->get();
+        return response()->json($ranking,200);
     }
 }
